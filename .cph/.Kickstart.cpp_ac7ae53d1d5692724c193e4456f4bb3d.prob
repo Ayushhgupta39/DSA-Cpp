@@ -1,0 +1,1 @@
+{"name":"Local: Kickstart","url":"e:\\VS Code\\Kickstart.cpp","tests":[{"id":1665845493747,"input":"2\n5\n1 -2 3 -2 4\n3\n1 0 3\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\VS Code\\Kickstart.cpp","group":"local","local":true}

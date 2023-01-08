@@ -1,0 +1,1 @@
+{"name":"Local: problems","url":"e:\\VS Code\\problems.cpp","tests":[{"id":1652799120847,"input":"6\n1 4 4 4 5 3","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\VS Code\\problems.cpp","group":"local","local":true}

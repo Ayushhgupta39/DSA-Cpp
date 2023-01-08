@@ -1,0 +1,1 @@
+{"name":"Local: reverse","url":"e:\\VS Code\\reverse.cpp","tests":[{"id":1652534672732,"input":"123","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\VS Code\\reverse.cpp","group":"local","local":true}

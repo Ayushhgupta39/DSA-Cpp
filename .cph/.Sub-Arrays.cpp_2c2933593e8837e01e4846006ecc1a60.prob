@@ -1,0 +1,1 @@
+{"name":"Local: Sub-Arrays","url":"e:\\VS Code\\Sub-Arrays.cpp","tests":[{"id":1653110623525,"input":"5\n1 -2 3 -2 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\VS Code\\Sub-Arrays.cpp","group":"local","local":true}

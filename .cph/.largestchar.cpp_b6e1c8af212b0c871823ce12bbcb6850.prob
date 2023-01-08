@@ -1,0 +1,1 @@
+{"name":"Local: largestchar","url":"e:\\VS Code\\largestchar.cpp","tests":[{"id":1648270184660,"input":"10\ndo or die","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\VS Code\\largestchar.cpp","group":"local","local":true}
