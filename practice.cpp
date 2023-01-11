@@ -1,23 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+vector<int> valueEqualToIndex(int arr[], int n)
+{
+    vector<int> ans;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == i+1)
+        {
+            ans.push_back(arr[i]);
+        }
+    }
+    
+    return ans;
+}
+
 int main()
 {
-    vector<int> nums = {1,2,2,3,3,4,5,5,6,6,7};
-    vector<int> org;
-    unordered_map<int, int> elem;
-    for (auto i : nums)
-    {
-        elem[i]++;
+    int n;
+    cin >> n;
+    int arr[n];
+    for(int i=0; i<n; i++) {
+        cin >> arr[i];
     }
-    unordered_map<int, int>::iterator itr;
-    for (itr = elem.begin(); itr != elem.end(); itr++)
-    {
-        org.push_back((*itr).first);
-    }
-    for (auto i : org)
-    {
-        cout << i << " ";
-    }
+    valueEqualToIndex(arr, n);
     return 0;
 }
