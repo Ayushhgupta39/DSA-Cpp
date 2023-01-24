@@ -1,28 +1,29 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> valueEqualToIndex(int arr[], int n)
+bool hasGroupsSizeX(vector<int> &deck)
 {
-    vector<int> ans;
-    for (int i = 0; i < n; i++)
-    {
-        if (arr[i] == i+1)
-        {
-            ans.push_back(arr[i]);
+    sort(deck.begin(), deck.end());
+    int size = deck.size();
+    int n = deck[size-1];
+    vector<int> freq(n+1);
+    for(int i=0; i<deck.size(); i++) {
+        freq[deck[i]]++;
+    }
+    for(int i=1 ; i<freq.size()-1; i++) {
+        if(freq[i] != freq[i+1] && freq[i] != 0) {
+            return false;
         }
     }
-    
-    return ans;
+    return true;
 }
 
 int main()
 {
-    int n;
-    cin >> n;
-    int arr[n];
-    for(int i=0; i<n; i++) {
+    vector<int> arr(8);
+    for(int i=0; i<8; i++) {
         cin >> arr[i];
     }
-    valueEqualToIndex(arr, n);
+    cout << hasGroupsSizeX(arr) << endl;
     return 0;
 }
