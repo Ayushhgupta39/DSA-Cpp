@@ -81,9 +81,9 @@ void inOrder(node* root)
         return;
     }
 
-    inOrder(root -> left);
-    cout << root -> data << " ";
-    inOrder(root -> right);
+    inOrder(root -> left); // L
+    cout << root -> data << " "; // N
+    inOrder(root -> right); // R
 }
 void preOrder(node* root){
     if(root == NULL)
