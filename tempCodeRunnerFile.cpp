@@ -1,4 +1,12 @@
-if(visitors[n-1] > visitors[n-2]) 
-        // {
-        //     count++;
-        // }
+int n;
+    cin >> n;
+    int i=1;
+    while(i<=n) {
+        int j=1;
+        while(j<=n) {
+            cout << "*" << " ";
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
