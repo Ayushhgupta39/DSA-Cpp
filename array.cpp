@@ -1,23 +1,34 @@
-#include<iostream>
-#include<math.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-int main(){
-    // int array[5]={10,20,30,40};
-    // array[4]={50};
-    // cout<<array[3]<<endl;
-    // cout<<array[4];
+int findMax(int arr[], int size) {
+    int maxNum = INT_MIN;
+    for (int i=0; i<size; i++) {
+        maxNum = max(maxNum, arr[i]);
+    }
+    return maxNum;
+}
 
-    //Taking inputs from the user
-   int n;
-   int array[n];
-   cin>>n;
-   for(int i=1; i<n; i++){
-       cin>>array[i];
-   }
-   for(int i=1; i<n; i++){
-       cout<<array[i]<<" ";
-   }
-    
+int findMin(int arr[], int size) {
+    int minNum = INT_MAX;
+    for (int i=0; i<size; i++) {
+        minNum = min(minNum, arr[i]);
+    }
+    return minNum;
+}
+
+void arraySum(int arr[], int size) {
+    int sum = 0;
+    for (int i=0; i<size; i++) {
+        sum += arr[i];
+    }
+    cout << sum << endl;
+}
+
+int main() {
+    int arr[5] = {3,5,6,7,1};
+    cout << findMax(arr, 5) << endl;
+    cout << findMin(arr, 5) << endl;
+    arraySum(arr, 5);
     return 0;
 }
